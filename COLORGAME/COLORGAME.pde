@@ -23,6 +23,8 @@ String[]words = {"red", "orange", "yellow", "green", "blue", "purple"};
 int rng = int(random(0, 5));
 int rng2 = int(random(0, 5));
 
+ArrayList<PImage> gif; //declaration
+int n = 0;
 
 void setup () {
   size (800, 600);
@@ -43,20 +45,27 @@ void draw() {
   xmark = loadImage ("xmark.png");
   xmark.resize(135, 135);
 
-  if (dist(mouseX, mouseY, 207.5, 487.5 )<150&& mode == play) {
+  if (mouseX > 0 && mouseX < 400 && mouseY> 0 && mouseY < 600 && mode == play) {
     image (checkmark, 110, 390, 200, 200);
   }
-  if (dist(mouseX, mouseY, 587.5, 482.5 )<150&& mode == play) {
+  if (mouseX > 400 && mouseX < 800 && mouseY> 0 && mouseY < 600 && mode == play) {
     image (xmark, 510, 415, 154.3, 154.3);
   }
 }
+// if (dist(mouseX, mouseY, 207.5, 487.5 )<150&& mode == play) {
+//   image (checkmark, 110, 390, 200, 200);
+// }
+// if (dist(mouseX, mouseY, 587.5, 482.5 )<150&& mode == play) {
+//   image (xmark, 510, 415, 154.3, 154.3);
+// }
+
 void mouseReleased() {
   if (mode == intro) {
-    mode = play;
+    introclick();
   } else if (mode == play) {
-    mode = gameover;
+    playclick();
   } else if (mode == gameover) {
-    mode = intro;
+    gameoverclick();
   } else {
     println("Mode error!");
   }

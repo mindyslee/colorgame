@@ -10,4 +10,12 @@ void intro() {
   textAlign(CENTER,CENTER);
   textSize(40);
   text("COLOUR GAME",400,250);
+  textSize(20);
+  text("CLICK TO START GAME",400,300);
+}
+
+void introclick() {
+  
+  
+  
 }

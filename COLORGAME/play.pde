@@ -1,6 +1,7 @@
 void play () {
+  //stroke(10);
   background (#E5E3E3);
-  color (#434343);
+  fill (#434343);
   strokeWeight (15);
   line(400,0,400,600);
   image (checkmark,120,400);
@@ -12,4 +13,10 @@ void play () {
   fill(255);
   strokeWeight(5);
   rect(200,150,400,200);
+}
+
+void playclick() {
+  
+  
+  
 }

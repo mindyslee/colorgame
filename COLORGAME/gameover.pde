@@ -1,6 +1,6 @@
 void gameover() {
   background(red);
-  noStroke();  
+  //noStroke();  
   fill(orange);
   ellipse(50, 300, 180, 180);
   fill(green);
@@ -23,8 +23,11 @@ void gameover() {
   text("High Score: " + highscore, 400, 300);
 
 
+if (highscore <= points ) {
+  highscore = points;
+}
+}
 
-  if (highscore <= points ) {
-    highscore = points;
-  }
+void gameoverclick() {
+  
 }
