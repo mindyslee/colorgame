@@ -15,6 +15,7 @@ void gameover() {
   textSize(20);
   text("Points: " + score, 100, 50);
   text("High Score: " + highscore, 100, 75);
+  text("Click to Re-start game!",400,500);
 
   if (highscore <= score ) {
     highscore = score;
