@@ -26,8 +26,6 @@ void intro() {
   textSize(40);
   text("COLOUR GAME",400,250);
   textSize(20);
-  //textSize(60);
-  //text("CoLoR tHeOrY", 400, 300);
   fill(255);
   text("Start", 400, 550);
 
